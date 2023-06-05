@@ -1,0 +1,10 @@
+H101;false;1000;suite;5;true;true;true;25;true;true;king;true;false;true;false;true;true;true;true;true
+H201;false;1500;doble suite;3;true;false;true;27;true;true;single;true;true;true;true;false;true;false;true;true
+H301;false;700;sencilla;3;true;true;false;15;true;true;single;true;true;false;true;true;true;false;true;true
+H401;false;700;sencilla;2;false;true;true;35;true;true;king;true;false;true;false;true;true;true;true;true
+H501;false;1000;suite;2;false;false;true;45;true;true;single;true;true;true;true;false;true;true;false;true
+H601;false;1500;doble suite;3;true;true;false;21;false;true;king;false;true;true;true;true;false;true;true;true
+H701;false;1000;suite;3;true;false;false;27;true;true;king;true;true;false;true;true;true;false;true;false
+H801;false;700;sencilla;5;false;false;false;13;true;true;single;false;true;true;true;false;true;true;true;true
+H901;false;1000;doble suite;7;true;true;true;28;true;true;king;true;false;true;true;true;false;true;true;true
+H1001;false;1000;suite;2;true;false;true;20;true;false;king;true;true;false;true;true;true;true;false;true
