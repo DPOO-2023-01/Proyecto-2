@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>600</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>MainMenu
+--
+--
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>80</y>
+      <w>270</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>controller
+--
+- VentanaPrincipal: login
+- LectorUsuarios: lectorUsuarios
+- LectorHabitaciones: lectorHabitaciones
+- ArrayList: Habitaciones
+- ArrayList: Users
+- VentanaRegistro: registro
+- VentanaReserva: reserva
+- VentanaPago: pago
+--
++ login()
++ regist()
++ cargar_habitaciones()
++ seleccionar_habitaciones()
++ crear_reserva()
++ write_payment()
++ regist_login()
++ pago_visible()
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>650</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>VentanaHuespedes
+--
+--
+bg=white
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>810</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>VentanaRegistro
+--
+--
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>550</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>VentanaReserva
+--
+--
+bg=white
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>750</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>VentanaPrincipal
+--
+--
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>700</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>VentanaPago
+--
+--
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>190</y>
+      <w>150</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>LectorUsuarios
+--
+- ArrayList: Usuarios
+--
++ getHabitaciones()
++ setHabitaciones()
++ leer()
++ escribir()
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>530</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>PayPal
+--
+--
++ crear_archivo_paypal()
++ escrbir_factura_paypal()
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>530</y>
+      <w>170</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>PSE
+--
+--
++ crear_archivo_PSE()
++ escrbir_factura_PSE()
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>70</y>
+      <w>170</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>LectorHabitaciones
+--
+- ArrayList: Habitaciones
+--
++ getHabitaciones()
++ setHabitaciones()
++ leer()
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>890</x>
+      <y>70</y>
+      <w>160</w>
+      <h>420</h>
+    </coordinates>
+    <panel_attributes>habitacion
+--
+- String: ID
+- Boolean: reservada
+- double: precio
+- String: Tipo
+- Int: CantidadMax
+- Boolean: Vista
+- Boolean: Cocina
+- Boolean: Balcon
+--
++ getID()
++ setID()
++ getreservada()
++ setreservada()
++ getprecio()
++ setprecio()
++ getTipo()
++ setTipo()
++ getCantidadMax()
++ setCantidadMax()
++ getVista()
++ setVista()
++ getCocina()
++ setCocina()
++ getBalcon()
++ setBalcon()
+bg=white
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1140</x>
+      <y>440</y>
+      <w>150</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>ReservaWriter
+--
+--
++ CreateReserva()
++ escrbirHuespedes()
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>920</x>
+      <y>530</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Tarjeta
+--
+--
++ crear_archivo_tarjeta()
++ escrbir_factura_tarjeta()
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>340</y>
+      <w>140</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>user
+--
+- String: Usuario
+- String Contrasena
+--
++ getUsuario()
++ setUsuario()
++ getContrasena()
++ setContrasena()
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>390</x>
+      <y>510</y>
+      <w>220</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>Vista
+--
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>650</x>
+      <y>30</y>
+      <w>670</w>
+      <h>640</h>
+    </coordinates>
+    <panel_attributes>Mundo
+--
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>280</x>
+      <y>30</y>
+      <w>320</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>Controller
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>360</y>
+      <w>140</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>120.0;310.0;10.0;310.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>360</y>
+      <w>140</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>120.0;210.0;10.0;210.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>360</y>
+      <w>140</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>120.0;360.0;10.0;360.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>360</y>
+      <w>140</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>120.0;420.0;10.0;420.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>360</y>
+      <w>140</w>
+      <h>500</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>120.0;470.0;10.0;470.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>610</y>
+      <w>90</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;160.0;30.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>280</y>
+      <w>470</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>450.0;320.0;450.0;370.0;110.0;370.0;110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>280</y>
+      <w>680</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>660.0;320.0;660.0;370.0;110.0;370.0;110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>280</y>
+      <w>260</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>240.0;320.0;240.0;370.0;110.0;370.0;110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>280</y>
+      <w>600</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>580.0;190.0;550.0;190.0;550.0;370.0;110.0;370.0;110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>100</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>220</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>300</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>850</x>
+      <y>120</y>
+      <w>60</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
